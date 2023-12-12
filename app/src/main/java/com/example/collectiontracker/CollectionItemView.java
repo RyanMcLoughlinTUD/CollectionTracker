@@ -10,12 +10,13 @@ import android.widget.Button;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class CollectionItemView extends AppCompatActivity {
-
+    //this is the contents of a collection view
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection_item_view);
         FloatingActionButton AddItemFab = findViewById(R.id.AddItemFab);
+
 
         AddItemFab.setOnClickListener(new View.OnClickListener() {
             @Override

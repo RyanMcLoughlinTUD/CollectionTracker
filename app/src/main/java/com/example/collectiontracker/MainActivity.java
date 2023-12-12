@@ -21,7 +21,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    //home page code!!!!
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
        menuTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Assuming you are in the current activity
                 Intent intent = new Intent(MainActivity.this, CollectionItemView.class);
                 startActivity(intent);
 
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         binding.HomeFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Assuming you are in the current activity
                 Intent intent = new Intent(MainActivity.this, CollectionAdd.class);
                 startActivity(intent);
 
