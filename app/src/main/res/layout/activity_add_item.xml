@@ -85,5 +85,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ItemDescription" />
+    <!-- activity_add_item.xml -->
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="212dp"
+        android:text="Take Photo"
+        app:layout_constraintBottom_toTopOf="@+id/commitCollection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemAmount" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

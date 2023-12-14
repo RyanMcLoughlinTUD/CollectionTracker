@@ -29,11 +29,12 @@ public class CollectionAdd extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        binding = ActivityCollectionAddBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
         DBHelper database = new DBHelper(this);
         Button addCollection = findViewById(R.id.commitCollection);
         EditText collectionName = findViewById(R.id.ItemName);
-        binding = ActivityCollectionAddBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
 
         addCollection.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +46,15 @@ public class CollectionAdd extends AppCompatActivity {
                 if (!collectionNameText.isEmpty()) {
                     // Add the collection to the database
                     database.addCollection(collectionNameText);
+
+                    // Set the result to indicate success
+                    setResult(RESULT_OK);
+
+                    // Show a success message
                     Snackbar.make(view, "Collection added: " + collectionNameText, Snackbar.LENGTH_SHORT).show();
+
+                    // Finish the activity
+                    finish();
                 } else {
                     // Show an error message if the collection name is empty
                     Snackbar.make(view, "Please enter a collection name", Snackbar.LENGTH_SHORT).show();

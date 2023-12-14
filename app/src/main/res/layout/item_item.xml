@@ -1,0 +1,32 @@
+<!-- item_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"/>
+
+    <TextView
+        android:id="@+id/textViewItemDescription"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:text="Item Description" />
+
+    <TextView
+        android:id="@+id/AmountView"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageViewItemPhoto"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:scaleType="centerCrop"
+        android:src="@android:color/transparent" />
+
+</LinearLayout>
